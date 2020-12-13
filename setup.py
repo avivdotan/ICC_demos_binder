@@ -15,4 +15,4 @@ setuptools.setup(
 
 # because this is a demo of Pluto, we add some popular packages to the global package env and precompile
 import os
-os.system('julia -e "import Pkg; Pkg.add([\\"DifferentialEquations\\", \\"Distributions\\", \\"ForwardDiff\\", \\"LatexPrint\\", \\"Latexify\\", \\"PlotlyJS\\", \\"Plots\\", \\"PlutoUI\\"]); Pkg.precompile()"')
+os.system('julia -e "import Pkg; Pkg.add([\\"DifferentialEquations\\", \\"Distributions\\", \\"Flux\\", \\"ForwardDiff\\", \\"LatexPrint\\", \\"Latexify\\", \\"PlotlyJS\\", \\"Plots\\", \\"PlutoUI\\"]); Pkg.precompile(); import Flux;"')
