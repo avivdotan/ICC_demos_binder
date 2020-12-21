@@ -15,4 +15,4 @@ setuptools.setup(
 
 # because this is a demo of Pluto, we add some popular packages to the global package env and precompile
 import os
-os.system('julia -e "import Pkg; Pkg.add([\\"DifferentialEquations\\", \\"Distributions\\", \\"Flux\\", \\"ForwardDiff\\", \\"LatexPrint\\", \\"Latexify\\", \\"PlotlyJS\\", \\"Plots\\", \\"PlutoUI\\"]); Pkg.precompile(); import Flux;"')
+os.system('julia -e "import Pkg; Pkg.add([\\"DifferentialEquations\\", \\"Distributions\\", \\"Flux\\", \\"ForwardDiff\\", \\"LatexPrint\\", \\"Latexify\\", \\"PlotlyJS\\", \\"Plots\\", \\"PlutoUI\\"]); Pkg.add(Pkg.PackageSpec(url=\\"https://github.com/bci4cpl/Tempotrons.jl\\")); Pkg.precompile(); import Flux;"')
